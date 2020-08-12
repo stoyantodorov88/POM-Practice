@@ -19,7 +19,7 @@ namespace AutomationPractice
                 FirstName = fixture.Create<string>(),
                 LastName = fixture.Create<string>(),
                 Email = fixture.Create<string>(),
-                Gender = "Male",
+                Gender = "Neutral",
                 Phone = fixture.Create<int>(),
                 Day = dateTime.Date.ToString(),
                 Month = dateTime.Month.ToString(),
