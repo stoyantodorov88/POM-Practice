@@ -23,9 +23,10 @@ namespace AutomationPractice
             }
 
 
-        public void Scroll(IWebElement element) 
+        public IWebElement Scroll(IWebElement element) 
         {
             ((IJavaScriptExecutor)Driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            return element;
         }
     }
 }
