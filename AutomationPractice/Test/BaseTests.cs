@@ -22,9 +22,10 @@ namespace POMPractice
             Builder = new Actions(Driver);
         }
 
-        public void ScrollTo(IWebElement element)
+        public IWebElement ScrollTo(IWebElement element)
         {
             ((IJavaScriptExecutor)Driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            return element;
         }
     }
 }
