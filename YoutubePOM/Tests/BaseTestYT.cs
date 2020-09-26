@@ -43,15 +43,12 @@ namespace POMPractice.YoutubePOM.Tests
             element.Click();
         }
 
-
         public void Click(IWebElement element)
         {
             var js = (IJavaScriptExecutor)driver;
             js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
             element.Click();
         }
-
-
 
     }
 }

@@ -15,18 +15,13 @@ namespace POMPractice.YoutubePOM.Tests
 
         [Test]
         public void PlaySong()
-        {
-                        
+        {                      
             hoverAndClick(searchingPage.SignInNoThanksButton);
             Click(searchingPage.CookiesAgreeButton);
             searchingPage.NavigateToResultPage();
             resultPage.NavigateToChannelPage();
 
             Assert.IsTrue(channelPage.TrackTitle.Displayed);
-
-           
-          
-
         }
 
     }
