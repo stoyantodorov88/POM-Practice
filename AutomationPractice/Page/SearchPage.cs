@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,19 +12,19 @@ namespace POMPractice
         {
         }
 
-        public IWebElement ElementsSection => Wait.Until(d => d.FindElement(By.CssSelector("#app > div > div > div.home-body > div > div:nth-child(1) > div > div.card-up")));
+        public IWebElement ElementsSection => Wait.Until(d => d.FindElement(By.XPath("//div[@class='category-cards']")));
 
-        public IWebElement RadioButton => Wait.Until(d => d.FindElement(By.XPath("//*[@id='item-2']/span")));
+        public IWebElement RadioButton => Driver.FindElement(By.XPath("//*[@id='item-2']/span"));
 
-        public IWebElement ImpressiveButton => Wait.Until(d => d.FindElement(By.ClassName("custom-control-label")));
+        public IWebElement ImpressiveButton => Driver.FindElement(By.ClassName("custom-control-label"));
 
-        public IWebElement H1TitleApeears => Wait.Until(d => d.FindElement(By.ClassName("mt-3")));
+        public IWebElement H1TitleApeears => Driver.FindElement(By.ClassName("mt-3"));
 
-        public IWebElement IterationsSection => Wait.Until(d => d.FindElement(By.CssSelector("#app > div > div > div.home-body > div > div:nth-child(5) > div > div.card-body")));
+        public IWebElement InteractionsSection => Driver.FindElement(By.XPath("//span[text()='Dragabble']"));
 
-        public IWebElement IterationsField => Wait.Until(d => d.FindElement(By.XPath("/html/body/div/div/div/div[2]/div[1]/div/div/div[5]/div/ul/li[5]")));
+        public IWebElement InteractionsField => Driver.FindElement(By.Id("item-4"));
 
-        public IWebElement DragableBox => Wait.Until(d => d.FindElement(By.Id("dragBox")));
+        public IWebElement DragableBox => Driver.FindElement(By.Id("dragBox"));
 
     }
 }
