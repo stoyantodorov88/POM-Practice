@@ -20,6 +20,7 @@ namespace POMPractice.YoutubePOM.Tests
             Click(searchingPage.CookiesAgreeButton);
             searchingPage.SearchForSong();
             searchingPage.NavigateToResultPage();
+            resultPage.PlaySong();
             resultPage.NavigateToChannelPage();
 
             Assert.IsTrue(channelPage.TrackTitle.Displayed);
