@@ -19,7 +19,7 @@ namespace POMPractice.YoutubePOM
 
         public IWebElement SearchBox => Driver.FindElement(By.Id("search"));
 
-        public void PlaySong()
+        public void SearchForSong()
         {   
             SearchBox.SendKeys("Depeche Mode - Its no good") ;
             SearchBox.SendKeys(Keys.Enter);
