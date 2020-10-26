@@ -19,12 +19,14 @@ namespace POMPractice.YoutubePOM
 
         public IWebElement SearchBox => Driver.FindElement(By.Id("search"));
 
+        public void PlaySong()
+        {   
+            SearchBox.SendKeys("Depeche Mode - Its no good") ;
+            SearchBox.SendKeys(Keys.Enter);
+        }
 
         public ResultPage NavigateToResultPage()
         {
-            
-            SearchBox.SendKeys("Depeche Mode - Its no good") ;
-            SearchBox.SendKeys(Keys.Enter);
             return new ResultPage(Driver);
         }
     }
