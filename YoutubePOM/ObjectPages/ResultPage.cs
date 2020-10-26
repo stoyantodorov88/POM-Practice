@@ -14,12 +14,16 @@ namespace POMPractice.YoutubePOM
            
         }
 
-        public IWebElement Track => Driver.FindElement(By.Id("video-title"));
+        public IWebElement Song => Driver.FindElement(By.Id("video-title"));
+        
+        public PlaySong()
+        {
+            Song.Click();
+        }
 
         public ChannelPage NavigateToChannelPage()
         {
-            Track.Click();
-            return new ChannelPage(Driver);
+           return new ChannelPage(Driver);
         }
     }
 }
