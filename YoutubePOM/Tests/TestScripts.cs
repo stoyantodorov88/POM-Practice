@@ -18,6 +18,7 @@ namespace POMPractice.YoutubePOM.Tests
         {                      
             hoverAndClick(searchingPage.SignInNoThanksButton);
             Click(searchingPage.CookiesAgreeButton);
+            searchingPage.SearchForSong();
             searchingPage.NavigateToResultPage();
             resultPage.NavigateToChannelPage();
 
