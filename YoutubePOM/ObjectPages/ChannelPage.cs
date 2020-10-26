@@ -12,7 +12,7 @@ namespace POMPractice.YoutubePOM.ObjectPages
         {
         }
 
-        public IWebElement TrackTitle => Driver.FindElement(By.CssSelector("#container > h1"));
+        public IWebElement SongTitle => Driver.FindElement(By.CssSelector("#container > h1"));
 
     }
 }
