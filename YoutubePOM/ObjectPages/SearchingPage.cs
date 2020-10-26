@@ -21,7 +21,7 @@ namespace POMPractice.YoutubePOM
 
         public void SearchForSong()
         {   
-            SearchBox.SendKeys("Depeche Mode - Its no good") ;
+            SearchBox.SendKeys("Depeche Mode - Its no good");
             SearchBox.SendKeys(Keys.Enter);
         }
 
