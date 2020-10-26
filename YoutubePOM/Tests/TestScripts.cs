@@ -23,7 +23,7 @@ namespace POMPractice.YoutubePOM.Tests
             resultPage.PlaySong();
             resultPage.NavigateToChannelPage();
 
-            Assert.IsTrue(channelPage.TrackTitle.Displayed);
+            Assert.IsTrue(channelPage.SongTitle.Displayed);
         }
 
     }
