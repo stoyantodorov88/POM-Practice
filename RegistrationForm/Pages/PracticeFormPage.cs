@@ -10,10 +10,7 @@ namespace AutomationPractice.registrationForm
 
         public PracticeFormPage(IWebDriver driver) 
             : base(driver)
-        {
-          
-            //_driver = driver; има го в base и е същото
-            
+        {            
         }
 
         public IWebElement FirstName => Wait.Until(d => d.FindElement(By.Id("firstName")));
